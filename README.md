@@ -14,7 +14,7 @@
 ### 📊 HTML Rapor Örneği
 ![Script Veri Çekme Raporu](src/PriceTracker.Script/images/scriptvericek.png)
 
-### 🔄 Çalışma Süreci
+### 🔄 Ürüne Git
 ![Script Yönlendirme](src/PriceTracker.Script/images/scriptvericekyonlendir.png)
 
 ## 📋 İçindekiler
@@ -434,7 +434,7 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 👨‍💻 Geliştirici
 
-**Alkn Bugra** - [@alknbugra](https://github.com/alknbugra)
+**Buğra Alkın** - [@alknbugra](https://github.com/alknbugra)
 
 ## 🙏 Teşekkürler
 
