@@ -1,0 +1,2 @@
+2025-10-21 08:34:07.272 +03:00 [INF] Fetching https://httpbin.org/get
+2025-10-21 08:34:11.531 +03:00 [INF] Wrote 1 records to C:\Users\bugraal\price-tracker-script\src\PriceTracker.Script\output.csv
