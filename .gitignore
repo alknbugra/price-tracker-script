@@ -1,0 +1,11 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Custom
+output.csv
+logs/
+*.log
