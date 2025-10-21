@@ -57,3 +57,4 @@ C:\Users\bugraal\price-tracker-script\src\PriceTracker.Script\obj\Debug\net9.0\r
 C:\Users\bugraal\price-tracker-script\src\PriceTracker.Script\obj\Debug\net9.0\PriceTracker.Script.pdb
 C:\Users\bugraal\price-tracker-script\src\PriceTracker.Script\obj\Debug\net9.0\PriceTracker.Script.genruntimeconfig.cache
 C:\Users\bugraal\price-tracker-script\src\PriceTracker.Script\obj\Debug\net9.0\ref\PriceTracker.Script.dll
+C:\Users\bugraal\price-tracker-script\src\PriceTracker.Script\obj\Debug\net9.0\PriceTracker.Script.sourcelink.json

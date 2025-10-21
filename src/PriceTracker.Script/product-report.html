@@ -1,0 +1,276 @@
+﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ticaret Ürün Raporu - 21.10.2025 13:34</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1d1d47 0%, #3859ab  100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        .product-card {
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: #f8f9fa;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .product-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 8px;
+        }
+        
+        .product-stock {
+            font-size: 0.9em;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        
+        .product-site {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .product-url {
+            margin-top: 10px;
+        }
+        
+        .product-url a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+        
+        .product-url a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        .no-products {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+        
+        .no-products h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Script ile Veri Çekme Raporu</h1>
+            <p>Otomatik Web Scraping Sistemi - 21.10.2025 13:34</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Toplam Ürün</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Fiyat Bilgisi</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Resim Bilgisi</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Farklı Site</div>
+            </div>
+        </div>
+        
+        <div class="products-grid">
+
+            <div class="product-card">
+                <img src="https://cdn.dsmcdn.com/ty1763/prod/QC_ENRICHMENT/20250923/13/47482522-5115-39f6-b467-f4bdb4191fee/1_org_zoom.jpg" alt="moda armanc Bej Dik Yakalı Cepli Kadın Peluş Mont" class="product-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOWZhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                <div class="product-info">
+                    <div class="product-name">moda armanc Bej Dik Yakalı Cepli Kadın Peluş Mont</div>
+                    <div class="product-price">2.099 TL</div>
+                    <div class="product-stock">Stok Adedi: Bilinmiyor</div>
+                    <div class="product-site">Trendyol</div>
+                    <div class="product-url">
+                        <a href="https://www.trendyol.com/moda-armanc/bej-dik-yakali-cepli-kadin-pelus-mont-p-883609193" target="_blank">Ürün Sayfasını Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.dsmcdn.com/ty1629/product/media/images/prod/PIM/20250128/20/e72e86c6-7b7b-4a44-a3d1-4dd1445ae70b/1_org_zoom.jpg" alt="Embeauty Besleyici Onarıcı Keratin Botoks Etkili Yoğun Saç Bakım Maskesi 500 ml" class="product-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOWZhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                <div class="product-info">
+                    <div class="product-name">Embeauty Besleyici Onarıcı Keratin Botoks Etkili Yoğun Saç Bakım Maskesi 500 ml</div>
+                    <div class="product-price">479,90 TL</div>
+                    <div class="product-stock">Stok Adedi: Bilinmiyor</div>
+                    <div class="product-site">Trendyol</div>
+                    <div class="product-url">
+                        <a href="https://www.trendyol.com/embeauty/besleyici-onarici-keratin-botoks-etkili-yogun-sac-bakim-maskesi-500-ml-p-871223550" target="_blank">Ürün Sayfasını Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.dsmcdn.com/ty1673/prod/QC/20250505/14/f8ea263f-2ccb-36d8-989e-9e0c226d7d6c/1_org_zoom.jpg" alt="Beınsteps Çocuk Bebek Ayakkabı Rahat Ortopedik Nefes Alır Mavi Turuncu Çocuk Işıklı Spor Ayakkabı" class="product-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOWZhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                <div class="product-info">
+                    <div class="product-name">Beınsteps Çocuk Bebek Ayakkabı Rahat Ortopedik Nefes Alır Mavi Turuncu Çocuk Işıklı Spor Ayakkabı</div>
+                    <div class="product-price">419,90 TL</div>
+                    <div class="product-stock">Stok Adedi: Sepete EkleSon 2 Ürün</div>
+                    <div class="product-site">Trendyol</div>
+                    <div class="product-url">
+                        <a href="https://www.trendyol.com/beinsteps/cocuk-bebek-ayakkabi-rahat-ortopedik-nefes-alir-mavi-turuncu-cocuk-isikli-spor-ayakkabi-p-917555655?merchantId=112931&boutiqueId=61" target="_blank">Ürün Sayfasını Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.dsmcdn.com/ty1744/product/media/images/prod/PIM/20250916/20/6c990fce-0bbe-4196-be5a-a6e1346258e9/1_org_zoom.jpg" alt="Huawei Watch GT 6 46 MM - Siyah" class="product-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOWZhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                <div class="product-info">
+                    <div class="product-name">Huawei Watch GT 6 46 MM - Siyah</div>
+                    <div class="product-price">Son 30 Günün En Düşük Fiyatı!10.499 TL8.929 TL</div>
+                    <div class="product-stock">Stok Adedi: Bilinmiyor</div>
+                    <div class="product-site">Trendyol</div>
+                    <div class="product-url">
+                        <a href="https://www.trendyol.com/huawei/watch-gt-6-46-mm-siyah-p-987942130?merchantId=104683&boutiqueId=61" target="_blank">Ürün Sayfasını Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.dsmcdn.com/ty1643/prod/QC/20250221/11/b844331b-6ce9-3a3e-9160-b29c7e1d9cf2/1_org_zoom.jpg" alt="STOP Forte Leke Çıkarıcı" class="product-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOWZhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                <div class="product-info">
+                    <div class="product-name">STOP Forte Leke Çıkarıcı</div>
+                    <div class="product-price">130 TL</div>
+                    <div class="product-stock">Stok Adedi: Bilinmiyor</div>
+                    <div class="product-site">Trendyol</div>
+                    <div class="product-url">
+                        <a href="https://www.trendyol.com/stop-forte/leke-cikarici-p-795882353?merchantId=984916&boutiqueId=61" target="_blank">Ürün Sayfasını Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.dsmcdn.com/ty1740/prod/QC_PREP/20250903/14/b193d8f0-7771-3934-bbda-a5b54cf9e358/1_org_zoom.jpg" alt="COMBİNE MİCHAİL Erkek Fermuarlı Kışlık Bol Haki Polar Ceket" class="product-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOWZhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                <div class="product-info">
+                    <div class="product-name">COMBİNE MİCHAİL Erkek Fermuarlı Kışlık Bol Haki Polar Ceket</div>
+                    <div class="product-price">Sepette</div>
+                    <div class="product-stock">Stok Adedi: Bilinmiyor</div>
+                    <div class="product-site">Trendyol</div>
+                    <div class="product-url">
+                        <a href="https://www.trendyol.com/combine-michail/erkek-fermuarli-kislik-bol-haki-polar-ceket-p-982065229?boutiqueId=61&merchantId=165925" target="_blank">Ürün Sayfasını Gör</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🤖 Price Tracker Script - .NET 9 ile geliştirilmiştir</p>
+            <p>Rapor oluşturulma tarihi: 21.10.2025 13:34:25</p>
+        </div>
+    </div>
+</body>
+</html>
